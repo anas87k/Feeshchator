@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChartActivity"
+    android:background="@color/cardview_shadow_end_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:backgroundTint="@color/colorLayout1"
+        android:background="@drawable/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/judula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="DATA PEMANTAUAN"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="24dp" />
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/judula">
+            <include layout="@layout/shimmer_datachart"/>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutdata"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/judula">
+            <GridLayout
+                android:id="@+id/ll"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:rowCount="1"
+                android:columnCount="2">
+                <EditText
+                    android:id="@+id/date"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_below="@+id/judula"
+                    android:fontFamily="@font/poppins_regular"
+                    android:backgroundTint="@color/colorWhiteTransparent"
+                    android:background="@drawable/shape_add_button"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:hint="Pilih Tanggal"/>
+                <Button
+                    android:id="@+id/btntgl"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="Atur"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorLayout1"
+                    android:background="@drawable/shape_add_button"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"/>
+            </GridLayout>
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/idktr"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                app:dotsColor="@color/colorWhite"
+                app:selectedDotColor="@color/colorWhite"
+                app:dotsSize="11dp"
+                app:dotsSpacing="5dp"
+                app:progressMode="true"
+                android:layout_below="@id/ll"/>
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/idktr"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vplist"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabsave"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:onClick="exportfile"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorLayout1"
+                android:src="@drawable/ic_baseline_save_alt"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/errordata"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+            <include layout="@layout/error_layout"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

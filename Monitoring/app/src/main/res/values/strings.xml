@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Feeshchator</string>
+    <string name="switch_datetime_picker_name">Switch DateTime Picker</string>
+    <string name="open_datetime_dialog">Open DateTime Dialog</string>
+    <string name="open_datetime_dialog_with_neutral_button">Open DateTime Dialog with Neutral Button</string>
+    <string name="clean">Clean</string>
+    <string name="txt_atur_skrg">Atur Sekarang</string>
+    <string name="txt_hdp_skrg">Hidupkan Sekarang</string>
+
+    <string name="txt3nointernet">Tenang, Ini Hanya Perlu Menghubungkan ke Internet atau WiFi Sistem kok. Tunggu Sebentar dan Coba Lagi</string>
+    <string name="txt2nointernet">Maksudnya Koneksinya Terputus</string>
+    <string name="txt1nointernet">Yaah... Ikannya Mati!!</string>
+
+    <string name="group1">Ketentuan Pengguna</string>
+    <string name="group2">Kontak Kami</string>
+    <string name="group3">Info Aplikasi</string>
+    <string name="error_dialog">Maaf Tidak Dapat Masuk ke Aplikasi Karena Perangkat Anda Tidak Ada Koneksi. Hubungkan ke Internet atau Jaringan Sistem</string>
+
+    <string-array name="group1">
+        <item>
+            Selamat Datang di Feeshchator IoT !
+            \n\n
+            Ketentuan Penggunaan ini mengatur penggunaan Feeshchator oleh anda dan menyediakan informasi tentang layanan Feeshchator yang akan diuraikan dibawah.
+            \n\n
+            Menu Pemantauan\n
+            Pada Menu Pemantauan anda akan mendapatkan informasi mengenai suhu air, pH air dan tingkat kadar garam pada air tambak anda. Sistem akan memberikan pemberitahuan kepada anda apabila kondisi air tambak anda tidak pada keadaan yang baik.
+            \n\n
+            Menu Pengendalian\n
+            Pada Menu Pengendalian anda dapat mengontrol durasi pemberian pakan otomatis. Selain itu anda juga dapat menjadwalkan pemberian pakan sesuai dengan yang anda inginkan dengan cara menekan tombol "Tambah Jadwal" dan sistem akan otomatis menyimpan dan mengeksekusi perintah sesuai dengan yang anda masukan.
+            \n\n
+            Menu Informasi\n
+            Pada Menu Informasi anda akan memperoleh informasi mengenai jadwal pasang surut air laut yang diperoleh sistem dari website resmi BMKG Tanjung Mas Semarang Jawa Tengah.
+            \n\n
+            Menu Tentang\n
+            Pada Menu Tentang anda dapat memperoleh informasi mengenai kontak yang dapat anda hubungi apabila anda mengalami kendala pada aplikasi Feeshchator serta informasi mengenai versi aplikasi Feeshchator yang anda gunakan.
+        </item>
+    </string-array>
+
+    <string-array name="group2">
+        <item>
+            Questions? Need help?
+            \n\n
+            Contact us at
+            \n\n
+            E-mail : freeshchatoriot@gmail.com
+        </item>
+    </string-array>
+
+    <string-array name="group3">
+        <item>Feeshchator Version 1.0.0</item>
+    </string-array>
+    <string name="title_activity_info">Info</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_about">Feeshchator Merupakan Sistem yang Dibangun Untuk Memantau Kualitas Air Tambak dan Pengendali Pakan Otomatis Dengan Sistem Jadwal dan Manual Pada Budidaya Ikan Bandeng Berbasis IoT</string>
+    <string name="name_dev">Khoirul Anas dan Titin Fajar Kurniasih</string>
+    <string name="versi">Versi 1.0.0</string>
+</resources>

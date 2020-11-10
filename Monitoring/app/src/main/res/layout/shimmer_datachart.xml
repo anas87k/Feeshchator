@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout
+        android:id="@+id/ll"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/colorDivider"/>
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/indicator"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:dotsSize="11dp"
+        app:dotsSpacing="5dp"
+        app:dotsColor="@color/colorDivider"
+        android:background="@color/colorDivider"
+        app:progressMode="true"
+        android:layout_below="@id/ll"/>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:backgroundTint="@color/colorDivider"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

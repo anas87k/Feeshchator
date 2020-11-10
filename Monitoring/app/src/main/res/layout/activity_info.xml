@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InfoActivity">
+
+    <TextView
+        android:id="@+id/txtabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@color/colorLayout1"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24dp"
+        android:text="INFORMASI"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:layout_below="@id/txtabout"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/colorSecondaryText"
+        app:tabSelectedTextColor="@color/colorWhite"
+        android:background="?attr/colorPrimary" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_below="@id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>
